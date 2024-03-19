@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+    <h2>게시판</h2>
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>작성자</th>
+                <th>제목</th>
+                <th>작성일</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td th:text="1"></td>
+                <td th:text="홍길동"></td>
+                <td>
+                	<a th:href="@{/board/example1}">test128382649</a>
+                </td>
+                <td th:text="2024-03-14"></td>
+            </tr>
+            <tr>
+                <td th:text="2"></td>
+                <td th:text="홍길동2"></td>
+                <td>
+                	<a th:href="@{/board/example2}">test12798382649</a>
+                </td>
+                <td th:text="2024-03-15"></td>
+            </tr>
+            <tr>
+                <td th:text="3"></td>
+                <td th:text="길동"></td>
+                <td>
+                	<a th:href="@{/board/example3}">test121118382649</a>
+                </td>
+                <td th:text="2024-03-15"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div th:replace="fragments/footer :: footer" />
+
+</div> <!-- /container -->
+
+</body>
+</html>
