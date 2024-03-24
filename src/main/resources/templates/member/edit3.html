@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+
+<div class="container">
+	<div th:replace="fragments/bodyHeader :: bodyHeader" />
+    
+    <!-- 제목, 내용 -->
+        <div class="form-group">
+        <div>
+        	<label>제목</label>
+        	<textarea type="text" class="form-control" rows="1">test4</textarea>
+        </div>
+        	</br>
+        	<label>내용</label>
+        	<textarea type="text" class="form-control" rows="12">테스트 example3</textarea>
+        </div>
+    
+    <!-- 수정, 취소 버튼 -->
+    <div style="text-align: right;">
+    	<a href="/board/example3" class="btn btn-primary">저장</a>
+    	<a href="/member/myBoard" class="btn my-2 btn-outline-danger">삭제</a>
+    </div>
+    
+</div> <!-- /container -->
+
+</body>
+</html>

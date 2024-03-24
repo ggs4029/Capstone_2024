@@ -18,35 +18,41 @@
             </thead>
             <tbody>
             <tr>
-                <td th:text="1"></td>
+                <td th:text="3"></td>
                 <td th:text="홍길동"></td>
                 <td>
-                	<a th:href="@{/board/example1}">test128382649</a>
+                	<a th:href="@{/board/example3}">test4</a>
+                </td>
+                <td th:text="2024-03-24"></td>
+            </tr>
+            <tr>
+                <td th:text="2"></td>
+                <td th:text="홍길동"></td>
+                <td>
+                	<a th:href="@{/board/example2}">test128382649</a>
                 </td>
                 <td th:text="2024-03-14"></td>
             </tr>
             <tr>
-                <td th:text="2"></td>
-                <td th:text="홍길동2"></td>
+                <td th:text="1"></td>
+                <td th:text="고길동"></td>
                 <td>
-                	<a th:href="@{/board/example2}">test12798382649</a>
-                </td>
-                <td th:text="2024-03-15"></td>
-            </tr>
-            <tr>
-                <td th:text="3"></td>
-                <td th:text="길동"></td>
-                <td>
-                	<a th:href="@{/board/example3}">test121118382649</a>
+                	<a th:href="@{/board/example1}">test12798382649</a>
                 </td>
                 <td th:text="2024-03-15"></td>
             </tr>
             </tbody>
         </table>
     </div>
-
-    <div th:replace="fragments/footer :: footer" />
-
+    <div class="footer">
+    <div class="jumbotron">
+    	<a href="/board/newBoard" class="btn btn-lg btn-secondary">글쓰기</a>
+    	<a href="/member/myBoard" class="btn btn-lg btn-dark">내 글만 보기</a>
+		<a href="/member/memberEdit" class="btn btn-lg btn-secondary">정보변경</a>
+		<a href="/" class="btn btn-lg btn-dark">로그아웃</a>
+    </div>
+    </div>
+</div>
 </div> <!-- /container -->
 
 </body>

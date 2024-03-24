@@ -1,13 +1,10 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/header :: header">
-    <title>Capstone_ksw</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 <div class="container">
-
-    <div th:replace="fragments/bodyHeader :: bodyHeader" />
 
     <div class="jumbotron">
     
@@ -22,14 +19,12 @@
         		<input type="password" placeholder="비밀번호" />
         	</p>
         	<p>
-        		<a href="/main/main" class="btn btn-lg btn-secondary">로그인</a>
+        		<a href="/main" class="btn btn-lg btn-secondary">로그인</a>
         		<a href="/register/register" class="btn btn-lg btn-dark">회원가입</a>
         	</p>
         </form>
         
     </div>
-    
-    <div th:replace="fragments/footer :: footer" />
     
 </div> <!-- /container -->
 </body>
